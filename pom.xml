@@ -63,8 +63,8 @@
             <exclusions>
                 <!-- Exclude all transitive dependencies from commons-lang3 if any existed -->
                 <exclusion>
-                    <groupId>*</groupId>
-                    <artifactId>*</artifactId>
+                    <groupId>netty-handler</groupId>
+                    <artifactId>io.netty</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
