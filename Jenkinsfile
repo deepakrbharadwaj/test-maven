@@ -3,8 +3,8 @@ pipeline {
 
     tools {
         // Ensure this Maven tool is configured in your Jenkins "Global Tool Configuration"
-        maven 'Maven 3.8.6'
-        jdk 'jdk8'
+        maven 'maven' 
+        jdk 'Java-21'
     }
 
     environment {
@@ -20,7 +20,8 @@ pipeline {
             steps {
                 // We use the -s flag to point to our project-specific settings.xml
                 // which uses the environment variables for authentication.
-                sh 'mvn clean install -s settings.xml'
+                // Added -X for debug logging to see why JFrog download fails
+                sh 'mvn -X clean install -s settings.xml'
             }
         }
     }
