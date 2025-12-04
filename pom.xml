@@ -9,6 +9,31 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>jfrog-artifactory</id>
+            <name>JFrog Artifactory</name>
+            <url>https://jfrog.commercialdev.dev.veedna.com/artifactory/gos-all-maven</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>central</id>
+            <name>Maven Central</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
     
     <!-- Plugin repositories - Maven Central for plugins -->
     <pluginRepositories>
@@ -29,7 +54,7 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>2.20.0</version>
+            <version>2.14.2</version>
         </dependency>
     </dependencies>
 </project>
