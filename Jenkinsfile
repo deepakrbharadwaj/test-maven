@@ -20,8 +20,8 @@ pipeline {
             steps {
                 // We use the -s flag to point to our project-specific settings.xml
                 // which uses the environment variables for authentication.
-                // Added -X for debug logging to see why JFrog download fails
-                sh 'mvn -X clean install -s settings.xml'
+                // Added -X for debug logging and -U to force update dependencies
+                sh 'mvn -X -U clean install -s settings.xml'
             }
         }
     }
