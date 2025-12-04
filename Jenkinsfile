@@ -20,7 +20,10 @@ pipeline {
             steps {
                 // We use the -s flag to point to our project-specific settings.xml
                 // which uses the environment variables for authentication.
-                // Added -X for debug logging and -U to force update dependencies
+                // Force purge of jackson-core to ensure we re-download it and test the JFrog connection
+                sh 'mvn dependency:purge-local-repository -DmanualInclude=com.fasterxml.jackson.core:jackson-core -DactTransitively=false -DreResolve=false'
+                
+                // Run the build with debug logging
                 sh 'mvn -X -U clean install -s settings.xml'
             }
         }
