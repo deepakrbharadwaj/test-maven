@@ -51,21 +51,21 @@
     </pluginRepositories>
     
     <dependencies>
-        <dependency>
+        <!-- <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
             <version>2.14.2</version>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20231013</version>
         </dependency>
-        <dependency>
+        <!-- <dependency>
             <groupId>software.amazon.ion</groupId>
             <artifactId>ion-java</artifactId>
             <version>1.0.2</version>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
