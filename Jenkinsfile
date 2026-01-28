@@ -10,7 +10,7 @@ pipeline {
     environment {
         // You should define these credentials in Jenkins Credentials Manager
         // and bind them here.
-        ARTIFACTORY_CREDS = credentials('7e59b761-7e86-402e-bc24-a194c787a656')
+        ARTIFACTORY_CREDS = credentials('linToken')
     }
 
     stages {
