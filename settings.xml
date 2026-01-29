@@ -17,7 +17,7 @@
     <mirror>
       <id>jfrog-artifactory</id>
       <mirrorOf>*,!plugin-repository,!central-plugins</mirrorOf>
-      <url>https://jfrog.commercialdev.dev.veedna.com/artifactory/gos-all-maven</url>
+      <url>https://jfrog.commercialdev.dev.veedna.com/artifactory/gos-all-proxy-maven</url>
     </mirror>
   </mirrors>
 
