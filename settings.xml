@@ -30,7 +30,7 @@
       <repositories>
         <repository>
           <id>jfrog-artifactory</id>
-          <url>https://jfrog.commercialdev.dev.veedna.com/artifactory/gos-all-maven</url>
+          <url>https://jfrog.commercialdev.dev.veedna.com/artifactory/gos-all-proxy-maven</url>
           <releases><enabled>true</enabled></releases>
           <snapshots><enabled>true</enabled></snapshots>
         </repository>
