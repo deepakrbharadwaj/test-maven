@@ -14,7 +14,7 @@
         <repository>
             <id>jfrog-artifactory</id>
             <name>JFrog Artifactory</name>
-            <url>https://jfrog.commercialdev.dev.veedna.com/artifactory/gos-all-maven</url>
+            <url>https://jfrog.commercialdev.dev.veedna.com/artifactory/gos-all-proxy-maven</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -51,11 +51,11 @@
     </pluginRepositories>
     
     <dependencies>
-        <dependency>
+        <!-- <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20250517</version>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-annotations-api</artifactId>
